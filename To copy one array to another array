@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int original[] = {1, 2, 3, 4, 5};
+    int n = sizeof(original)/sizeof(original[0]);
+    int copy[n];
+
+    for(int i = 0; i < n; i++) {
+        copy[i] = original[i];
+    }
+
+    printf("Copied array elements:\n");
+    for(int i = 0; i < n; i++) {
+        printf("%d ", copy[i]);
+    }
+
+    return 0;
+}

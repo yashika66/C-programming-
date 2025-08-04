@@ -16,3 +16,8 @@ int main() {
 
     return 0;
 }
+
+output
+Enter first string: Hello
+Enter second string: World
+Concatenated string: HelloWorld

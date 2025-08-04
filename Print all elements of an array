@@ -10,3 +10,9 @@ int main() {
     }
     return 0;
 }
+
+output 
+Array elements are:
+10 20 30 40 50
+
+

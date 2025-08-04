@@ -19,3 +19,8 @@ int main() {
     printf("%d^%d = %lld\n", base, exponent, result);
     return 0;
 }
+
+output
+Enter base: 3
+Enter exponent: 3
+3^3 = 27 

@@ -14,3 +14,7 @@ int main() {
 
     return 0;
 }
+
+output
+Enter an integer: 17
+17 is Odd. 

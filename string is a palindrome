@@ -24,3 +24,7 @@ int main() {
 
     return 0;
 }
+
+output
+Enter a string: hello
+The string is not a palindrome. 

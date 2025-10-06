@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[100], temp;
+    int len;
+
+    // Input string
+    printf("Enter a string: ");
+    scanf("%s", str);  // For single word strings. Use fgets() for sentences
+
+    len = strlen(str);
+
+    // Sorting using simple bubble sort
+    for(int i = 0; i < len - 1; i++) {
+        for(int j = i + 1; j < len; j++) {
+            if(str[i] > str[j]) {
+                // Swap characters
+                temp = str[i];
+                str[i] = str[j];
+                str[j] = temp;
+            }
+        }
+    }
+
+    // Display sorted string
+    printf("Sorted string: %s\n", str);
+
+    return 0;
+}
+output
+Sorted string: ehllo

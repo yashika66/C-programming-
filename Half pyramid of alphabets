@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int i, j;
+    char ch;
+
+    printf("Enter the number of rows: ");
+    scanf("%d", &i);
+
+    for (int row = 1; row <= i; row++) {
+        ch = 'A';  // Start from 'A' each row
+        for (j = 1; j <= row; j++) {
+            printf("%c ", ch);
+            ch++;
+        }
+        printf("\n");
+    }
+
+    return 0;
+} 
+output
+A 
+A B 
+A B C 
+A B C D 
+A B C D E 

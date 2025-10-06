@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+
+    // Input a natural number
+    printf("Enter a natural number: ");
+    scanf("%d", &n);
+
+    printf("Factors of %d are: ", n);
+
+    // Loop to find factors
+    for(int i = 1; i <= n; i++) {
+        if(n % i == 0) {
+            printf("%d ", i);
+        }
+    }
+
+    printf("\n");
+    return 0;
+}
+output
+Factors of 12 are: 1 2 3 4 6 12

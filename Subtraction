@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2, result;
+
+    // Input two numbers
+    printf("Enter first number: ");
+    scanf("%d", &num1);
+    printf("Enter second number: ");
+    scanf("%d", &num2);
+
+    // Subtract
+    result = num1 - num2;
+
+    // Display result
+    printf("Subtraction of %d and %d is %d\n", num1, num2, result);
+
+    return 0;
+}
+output
+Enter first number: 20
+Enter second number: 8
+Subtraction of 20 and 8 is 12
+

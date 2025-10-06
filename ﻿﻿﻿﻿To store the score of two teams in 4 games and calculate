@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    int team1[4], team2[4]; // Arrays to store scores of 4 games
+    int sum1 = 0, sum2 = 0; // To store total scores
+    float avg1, avg2;       // To store average scores
+
+    // Input scores for Team 1
+    for(int i = 0; i < 4; i++) {
+        printf("Enter score of Team 1 for game %d: ", i + 1);
+        scanf("%d", &team1[i]);
+        sum1 += team1[i];
+    }
+
+    // Input scores for Team 2
+    for(int i = 0; i < 4; i++) {
+        printf("Enter score of Team 2 for game %d: ", i + 1);
+        scanf("%d", &team2[i]);
+        sum2 += team2[i];
+    }
+
+    // Calculate average scores
+    avg1 = sum1 / 4.0;
+    avg2 = sum2 / 4.0;
+
+    // Display total and average scores
+    printf("\nTeam 1 - Total Score: %d, Average Score: %.2f\n", sum1, avg1);
+    printf("Team 2 - Total Score: %d, Average Score: %.2f\n", sum2, avg2);
+
+    return 0;
+}
+output
+Team 1 - Total Score: 70, Average Score: 17.50
+Team 2 - Total Score: 80, Average Score: 20.00

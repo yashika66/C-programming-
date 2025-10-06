@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    int number = 25;
+
+    printf("The integer value is: %d\n", number);
+
+    return 0;
+}
+output
+The integer value is: 25

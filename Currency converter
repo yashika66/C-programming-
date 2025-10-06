@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    double inr, converted;
+    int choice;
+
+    // Input amount in INR
+    printf("Enter amount in INR: ");
+    scanf("%lf", &inr);
+
+    // Display conversion options
+    printf("Convert INR to:\n");
+    printf("1. USD\n");
+    printf("2. Euro\n");
+    printf("3. GBP\n");
+    printf("Enter your choice (1-3): ");
+    scanf("%d", &choice);
+
+    // Perform conversion
+    switch(choice) {
+        case 1:
+            converted = inr * 0.012; // Example rate: 1 INR = 0.012 USD
+            printf("%.2lf INR = %.2lf USD\n", inr, converted);
+            break;
+        case 2:
+            converted = inr * 0.011; // Example rate: 1 INR = 0.011 EUR
+            printf("%.2lf INR = %.2lf EUR\n", inr, converted);
+            break;
+        case 3:
+            converted = inr * 0.010; // Example rate: 1 INR = 0.010 GBP
+            printf("%.2lf INR = %.2lf GBP\n", inr, converted);
+            break;
+        default:
+            printf("Invalid choice!\n");
+    }
+
+    return 0;
+}
+output
+1000.00 INR = 12.00 USD
